@@ -1,5 +1,3 @@
-
-
 function Loadingscreen() {
   if (window.innerWidth <= 600) {
     loader.innerHTML = getLoadingscreenMobile();
@@ -60,7 +58,7 @@ function checkCredentials(user, inputPassword) {
   if (!user) {
     // toggleLoadingSpinner('remove');
     // toggleSignInError('No user with that email', 'add');
-    console.log('No user with that email');
+    console.log("No user with that email");
 
     return;
   }
@@ -68,8 +66,8 @@ function checkCredentials(user, inputPassword) {
   if (user.password !== inputPassword) {
     // toggleLoadingSpinner('remove');
     // toggleSignInError('Email or password is invalid', 'add');
-    console.log('Email or password is invalid');
-    
+    console.log("Email or password is invalid");
+
     return;
   }
 
