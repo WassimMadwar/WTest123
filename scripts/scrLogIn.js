@@ -1,14 +1,5 @@
-const loader = document.getElementById("loader");
-const loginLogo = document.getElementById("loginLogo");
 
-/**
- * Loads and displays the loading screen based on the user's device screen width (mobile or desktop).
- *
- * If the screen width is less than or equal to 600px, it displays a mobile loading screen.
- * Otherwise, it shows a desktop loading screen. It also starts the loading animation.
- *
- * This function does not return any value.
- */
+
 function Loadingscreen() {
   if (window.innerWidth <= 600) {
     loader.innerHTML = getLoadingscreenMobile();
@@ -78,7 +69,7 @@ function checkCredentials(user, inputPassword) {
     // toggleLoadingSpinner('remove');
     // toggleSignInError('Email or password is invalid', 'add');
     console.log('Email or password is invalid');
-
+    
     return;
   }
 
